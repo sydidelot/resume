@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Sylvain Didelot</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Sylvain Didelot</h1>
+</header>
+<h1 id="section"><img src="img/sdidelot.jpg" /></h1>
+<p><img src="img/mail.png" width="25" /> didelot.sylvain@gmail.com   <img src="img/github.png" width="25" /> <a href="https://github.com/sydidelot">sydidelot</a></p>
+<hr />
+<h2 id="research-engineer-in-high-performance-computing">Research Engineer in High Performance Computing</h2>
+<blockquote>
+<p>Enthusiastic HPC (High Performance Computing ) software developer and end-user since 2010, I like facing new challenges using cutting-edge technologies. With a strong research background, I hold a Ph.D. that focuses on optimizing network data-movements and the scalability of HPC applications for very large supercomputers. After an experience in compute-intensive applications and another in a Cloud provider, I now devote my skills to accelerate I/O bound applications.</p>
+</blockquote>
+<p><strong>My area of interests includes:</strong></p>
+<ul>
+<li>Parallel and distributed systems programming using MPI, POSIX threads and OpenMP.</li>
+<li>Large-scale software development.</li>
+<li>MPI/MPIIO runtime development.</li>
+<li>Benchmarking, profiling, debugging.</li>
+<li>Performance optimizations, including data-locality improvements for Non-Uniform Memory Access (NUMA) architectures.</li>
+<li>High-speed networks (Infiniband, Intel Omni-Path, Cisco usNIC).</li>
+<li>Network libraries development.</li>
+<li>Computer hardware virtualization, including container-based virtualization.</li>
+</ul>
+<hr />
+<h2 id="experience">Experience</h2>
+<dl>
+<dt>Jan 2015 - Present</dt>
+<dd><em>Senior Software Developer</em> DDN Storage (Meudon, France).
+</dd>
+</dl>
+<p>Lead developer of the network communication layer in IME, which supports Infiniband (EDR/FDR), Intel Omni-Path and Ethernet networks. The network code has proved to scale <a href="https://www.vi4io.org/io500/start">up to 2048 compute nodes</a> and delivers I/O performance exceeding <a href="http://www.ddn.com/customers/joint-center-for-advanced-high-performance-computing-jcahpc/">1 TB/s on the Oakforest-PACS system (JCAHPC)</a>. Data locality optimizations and performance analysis in highly distributed environments.</p>
+<dl>
+<dt>Jan 2014 - Dec 2014</dt>
+<dd><em>Software Developer - HPC and BigData Expert</em> Outscale (Saint-Cloud, France).
+</dd>
+</dl>
+<p>Feasibility study of an HPC solution in the context of Cloud Computing. A proof-of-concept was designed based on the Linux Containers (LXC) and the low-latency Cisco usNIC protocol over 10 Gigabit Ethernet links.</p>
+<dl>
+<dt>Oct 2010 - Jun 2014</dt>
+<dd><strong>Ph.D. in HPC</strong> <em>Exascale Computing Research</em> Exascale Computing Research (Intel, CEA, UVSQ, GENCI)
+</dd>
+</dl>
+<p><strong>Title</strong>: Improving memory consumption and performance scalability of HPC applications with multi-threaded network communications</p>
+<blockquote>
+<p><strong>Summary</strong></p>
+</blockquote>
+<p>I developed in C a multi-threaded communication layer over Infiniband. I focused scientific applications parallelized using the Message Passing Interface (MPI) standard and the low-level OFA verbs communication API.</p>
+<blockquote>
+<p><strong>Achievements</strong></p>
+</blockquote>
+<ul>
+<li>I developed a scalable and multi-threaded communication layer for Infiniband networks, which has been validated up to 80,000 cores on CEA’s TERA-100 supercomputer. The communication layer is available for production inside <a href="http://mpc.paratools.com">MPC</a>, a runtime that fully conforms to MPI 1.3;</li>
+<li>I implemented a novel approach for sharing network connections in the context of mono- and multi-rail configurations (i.e., several HCAs on the same compute node);</li>
+<li>I proposed a runtime optimization to enforce the overlap potential of MPI communications using multi-threading;</li>
+<li>I demonstrated the efficiency of my multi-threaded communication layer in the context of hybrid programming (MPI+OpenMP and MPI+PThread).</li>
+</ul>
+<dl>
+<dt>2010 - 2015</dt>
+<dd><em>Teaching Assistant</em> Université de Versailles Saint-Quentin-en-Yvelines (France)
+</dd>
+</dl>
+<p>Teaching assistant: 108 hours</p>
+<ul>
+<li><em>2010 - 2013: First-year Master’s degree students.</em> Basic architecture and operating systems</li>
+<li><em>2011 - 2013: First-year Master’s degree students.</em> Distributed and parallel programming (Pthread, MPI)</li>
+<li><em>2011 - 2013: Third-year Bachelor’s degree students</em> Operating systems (Unix)</li>
+</ul>
+<dl>
+<dt>Feb 2010 - Jul 2010</dt>
+<dd><em>HPC Software Developer - Intern</em> CEA (Bruyères-Le-Châtel, France)
+</dd>
+</dl>
+<p>Design and development of a multi-threaded communication layer in shared-memory context for the Message Passing Interface (MPI) standard. Communication layer implemented inside MPC, a state-of-the-art runtime fully supporting MPI 1.3 (http://mpc.sourceforge.net/)</p>
+<dl>
+<dt>Sep 2008 - Feb 2009</dt>
+<dd><em>Web Developer - Intern</em> PSA Peugeot Citroën (Sochaux, France)
+</dd>
+</dl>
+<p>Maintenance and evolutions of a Web application using the IBM Lotus Domino software.</p>
+<dl>
+<dt>Mars 2007 - Jun 2007</dt>
+<dd><em>Software Developer in Infrastructure Virtualization - Intern</em>, University of Westminster (London)
+</dd>
+</dl>
+<p>Development of a solution to easily deploy and manage clusters of virtual machines using Xen hypervisor. Integration to the University’s network.</p>
+<h2 id="education">Education</h2>
+<dl>
+<dt>2010 - 2014</dt>
+<dd><em>UVSQ Université de Versailles Saint-Quentin-en-Yvelines</em>
+</dd>
+</dl>
+<p>Doctor of Philosophy - PhD, Computer Science - High Performance Computing</p>
+<dl>
+<dt>2007 - 2010</dt>
+<dd><em>Université de Technologie de Belfort-Montbéliard</em>
+</dd>
+</dl>
+<p>Master’s degree in Computer Engineering, Network communications &amp; Embedded systems</p>
+<h2 id="open-source-contributor">Open-Source Contributor</h2>
+<ul>
+<li><a href="https://github.com/ofiwg/libfabric">Open Fabric Interfaces (Libfabric)</a>: Bug fixes and development of new features in the Verbs, sockets and PSM (Intel OPA) providers.</li>
+<li><a href="https://github.com/CCI/cci">Common Communication Interface (CCI)</a>: Bug fixes in the Verbs plugin.</li>
+<li><a href="https://github.com/pmodels/mpich">MPICH</a>: Add support of IME into ROMIO (MPIIO interface)</li>
+</ul>
+<h2 id="publications">Publications</h2>
+<dl>
+<dt>2013</dt>
+<dd><em>Improving MPI Communication Overlap with Collaborative Polling.</em> <strong>Journal EuroMPI 2012 Special Issue.</strong> Didelot, Sylvain &amp; Carribault, Patrick &amp; Pérache, Marc &amp; Jalby, William.
+</dd>
+</dl>
+<p>With the rise of parallel applications complexity, the needs in term of computational power are continually growing. Recent trends in High-Performance Computing (HPC) have shown that improvements in single-core performance will not be sufficient to face the challenges of an exascale machine: we expect an enormous growth of the number of cores as well as a multiplication of the data volume exchanged across compute nodes. To scale applications up to Exascale, the communication layer has to minimize the time while waiting for network messages. This paper presents a message progression based on Collaborative Polling which allows an efficient auto-adaptive overlapping of communication phases by performing computing. This approach is new as it increases the application overlap potential without introducing overheads of a threaded message progression. We designed our approch for Infiniband into a thread-based MPI runtime called MPC. We evaluate the gain from Collaborative Polling on the NAS Parallel Benchmarks and three scientific applications, where we show significant improvements in communication times up to a factor of 2.</p>
+<dl>
+<dt>2012</dt>
+<dd><em>Improving MPI Communication Overlap with Collaborative Polling.</em> <strong>Proceedings of EuroMPI 2012.</strong> Didelot, Sylvain &amp; Carribault, Patrick &amp; Pérache, Marc &amp; Jalby, William.
+</dd>
+</dl>
+<p>With the rise of parallel applications complexity, the needs in term of computational power are continually growing. Recent trends in High-Performance Computing (HPC) have shown that improvements in single-core performance will not be sufficient to face the challenges of an Exascale machine: we expect an enormous growth of the number of cores as well as a multiplication of the data volume exchanged across compute nodes. To scale applications up to Exascale, the communication layer has to minimize the time while waiting for network messages. This paper presents a message progression based on Collaborative Polling which allows an efficient auto-adaptive overlapping of communication phases by performing computing. This approach is new as it increases the application overlap potential without introducing overheads of a threaded message progression.</p>
+<h2 id="certifications">Certifications</h2>
+<dl>
+<dt>May 2019</dt>
+<dd><em>Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning</em>
+</dd>
+</dl>
+<p><a href="https://www.coursera.org/account/accomplishments/verify/WVNDUB9QW52N">Credential Identifier Credential ID WVNDUB9QW52N</a></p>
+<dl>
+<dt>Jan 2019</dt>
+<dd><em>Sequence Models</em>
+</dd>
+</dl>
+<p><a href="https://www.coursera.org/account/accomplishments/verify/9DW8RMJHN2UL">Credential Identifier Credential ID 9DW8RMJHN2UL</a></p>
+<dl>
+<dt>Dec 2018</dt>
+<dd><em>Convolutional Neural Networks</em>
+</dd>
+</dl>
+<p><a href="https://www.coursera.org/account/accomplishments/verify/S6K5VPS42EN4">Credential Identifier Credential ID S6K5VPS42EN4</a></p>
+<dl>
+<dt>Nov 2018</dt>
+<dd><em>Improving Deep Neural Networks: Hyperparameter tuning, Regularization and Optimization</em>
+</dd>
+</dl>
+<p><a href="https://www.coursera.org/account/accomplishments/verify/7YL9VKSW78K2">Credential Identifier Credential ID 7YL9VKSW78K2</a></p>
+<dl>
+<dt>Nov 2018</dt>
+<dd><em>Structuring Machine Learning Projects</em>
+</dd>
+</dl>
+<p><a href="https://www.coursera.org/account/accomplishments/verify/M43A6MFFQ8QS">Credential Identifier Credential ID M43A6MFFQ8QS</a></p>
+<dl>
+<dt>Oct 2018</dt>
+<dd><em>Neural Networks and Deep Learning</em>
+</dd>
+</dl>
+<p><a href="https://www.coursera.org/account/accomplishments/verify/5A3LCGX42GX9">Credential Identifier Credential ID 5A3LCGX42GX9</a></p>
+<dl>
+<dt>May 2018</dt>
+<dd><em>Machine Learning</em>
+</dd>
+</dl>
+<p><a href="https://www.coursera.org/account/accomplishments/verify/MJ648WDB7FL7">Credential Identifier Credential ID MJ648WDB7FL7</a></p>
+</body>
+</html>
