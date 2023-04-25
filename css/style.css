@@ -52,6 +52,13 @@ dd {
     background-color: #ceebfd;
 }
 p {
+    margin-left: 17%;
+    margin-top:0px;
+    margin-bottom:10px;
+}
+
+ul {
+    margin-left: 17%;
     margin-top:0px;
     margin-bottom:10px;
 }

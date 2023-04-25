@@ -1,41 +1,63 @@
 % Sylvain Didelot
-![](img/sdidelot.jpg)
+![](img/sdidelot.jpg){width=240px}
 ============
 
-![](img/mail.png){width=25px} didelot.sylvain@gmail.com &nbsp; ![](img/github.png){width=25px} [sydidelot](https://github.com/sydidelot)
+<center>![](img/mail.png){width=25px} didelot.sylvain@gmail.com &nbsp; ![](img/github.png){width=25px} [sydidelot](https://github.com/sydidelot)</center>
+
 
 ----
 
-## Research Engineer in High Performance Computing
+## Software Engineer in High Performance Computing
 
-> Enthusiastic HPC (High Performance Computing ) software developer and end-user since 2010, I like facing new challenges using cutting-edge technologies.  With a strong research background, I hold a Ph.D. that focuses on optimizing network data-movements and the scalability of HPC applications for very large supercomputers.  After an experience in compute-intensive applications and another in a Cloud provider, I now devote my skills to accelerate I/O bound applications.
+Enthusiastic software developer in HPC since 2010, I like facing new challenges using cutting-edge technologies.  With a strong research background, I hold a Ph.D. that focuses on optimizing network data-movements and the scalability of HPC applications for very large systems.  After an experience in compute-intensive applications, I am now working on accelerating I/O bound applications.
 
 **My area of interests includes:**
 
-* Parallel and distributed systems programming using MPI, POSIX threads and OpenMP.
-* Large-scale software development.
-* MPI/MPIIO runtime development.
+* Parallel and distributed programming using MPI, POSIX threads, OpenMP, [SPDK](https://spdk.io/).
+* Large-scale software development in C and C++.
+* Runtime and network programming.
 * Benchmarking, profiling, debugging.
 * Performance optimizations, including data-locality improvements for Non-Uniform Memory Access (NUMA) architectures.
-* High-speed networks (Infiniband, Intel Omni-Path, Cisco usNIC).
-* Network libraries development.
-* Computer hardware virtualization, including container-based virtualization.
+* High-speed networks (TCP/IP, Infiniband, Intel Omni-Path, Cisco usNIC).
+* Virtualization, containers, Virtual Machines.
 
 ----
 
 Experience
 ----------
 
-Jan 2015 - Present
-:   *Senior Software Developer* DDN Storage (Meudon, France).
+Jan 2019 - Present
+:   *Senior Software Developer - RED* DDN Storage (Meudon, France).
 
-Lead developer of the network communication layer in IME, which supports Infiniband (EDR/FDR), Intel Omni-Path and Ethernet networks. The network code has proved to scale [up to 2048 compute nodes](https://www.vi4io.org/io500/start) and delivers I/O performance exceeding [1 TB/s on the Oakforest-PACS system (JCAHPC)](http://www.ddn.com/customers/joint-center-for-advanced-high-performance-computing-jcahpc/).
+**Context**: RED is a high-performance software defined object-store, which internally supports a dual I/O engine which selects an optimized IO path depending on the nature of the IO: latency or bandwidth (bulk data) driven.
+
+**Role**: Runtime and network engineer.
+
+May 2016 - Present
+:   *Open Source Contributor*
+
+**[OFI Libfabric](https://github.com/ofiwg/libfabric/)** (202+ commits), low-level network library that abstracts diverse networking technologies under a common API. Selected contributions:
+
+* verbs: connection establishment using native Infiniband addresses
+* tcp: [io\_uring](https://kernel.dk/io_uring.pdf) implementation
+* core: new API calls to override logging functions
+* verbs: added support for Shared-Receive Queues
+* Bugfixes
+
+**[MPICH](https://github.com/pmodels/mpich/commit/07652fd78f16e11be80cc5feb12bdb6de5f29c6b#diff-e6c2ecc3fb89815f450fcb02fff1e409), [IOR](https://github.com/hpc/ior/commits?author=sydidelot), [OpenMPI](https://github.com/open-mpi/ompi/commit/ccc96efc2ebbbb9a9e8ccdbbf7010ea4fa63c86a), [FIO](https://github.com/axboe/fio/commit/a40e7a5977547cbde62dbf1650cba4778a132f69#diff-a01c6223801b4239ca831d34c999f458)**: Added support for IME native.
+
+Jan 2015 - Jan 2019
+:   *Senior Software Developer - IME* DDN Storage (Meudon, France)
+
+**Context**: Infinite Memory Engine (IME) is a scale-out, flash-native, software-defined, storage cache that streamlines the data path for application IO.
+
+**Role**: Lead developer of the network communication layer in IME, which supports Infiniband (EDR/FDR), Intel Omni-Path and Ethernet networks. The network code has proved to scale [up to 2048 compute nodes](https://www.vi4io.org/io500/start) and delivers I/O performance exceeding [1 TB/s on the Oakforest-PACS system (JCAHPC)](http://www.ddn.com/customers/joint-center-for-advanced-high-performance-computing-jcahpc/).
  Data locality optimizations and performance analysis in highly distributed environments.
 
 Jan 2014 - Dec 2014
 :   *Software Developer - HPC and BigData Expert* Outscale (Saint-Cloud, France).
 
-Feasibility study of an HPC solution in the context of Cloud Computing. A proof-of-concept was designed based on the Linux Containers (LXC) and the low-latency Cisco usNIC protocol over 10 Gigabit Ethernet links.
+**Role**: Study of an HPC solution in the context of Cloud Computing. A proof-of-concept was designed based on the Linux Containers (LXC) and the low-latency Cisco usNIC protocol over 10 Gigabit Ethernet links.
 
 
 Oct 2010 - Jun 2014
@@ -101,13 +123,6 @@ Doctor of Philosophy - PhD, Computer Science - High Performance Computing
 :   *Université de Technologie de Belfort-Montbéliard*
 
 Master's degree in Computer Engineering, Network communications & Embedded systems
-
-Open-Source Contributor
------------------------
-
-* [Open Fabric Interfaces (Libfabric)](https://github.com/ofiwg/libfabric): Bug fixes and development of new features in the Verbs, sockets and PSM (Intel OPA) providers.
-* [Common Communication Interface (CCI)](https://github.com/CCI/cci): Bug fixes in the Verbs plugin.
-* [MPICH](https://github.com/pmodels/mpich): Add support of IME into ROMIO (MPIIO interface)
 
 Publications
 ------------
